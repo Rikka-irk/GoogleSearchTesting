@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleSearchTesting", "GoogleSearchTesting\GoogleSearchTesting.csproj", "{90B468F2-C6AF-4CC9-BF81-39A428BD7AE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleSearchTesting", "GoogleSearchTesting\GoogleSearchTesting.csproj", "{21161FC3-B389-4F4F-A3E1-26F012F120D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{90B468F2-C6AF-4CC9-BF81-39A428BD7AE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{90B468F2-C6AF-4CC9-BF81-39A428BD7AE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{90B468F2-C6AF-4CC9-BF81-39A428BD7AE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{90B468F2-C6AF-4CC9-BF81-39A428BD7AE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21161FC3-B389-4F4F-A3E1-26F012F120D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21161FC3-B389-4F4F-A3E1-26F012F120D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21161FC3-B389-4F4F-A3E1-26F012F120D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21161FC3-B389-4F4F-A3E1-26F012F120D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {98EB3E0D-62E8-4331-98E8-CCA29406469E}
+		SolutionGuid = {DFB92847-01F0-440F-B67C-7887806974B5}
 	EndGlobalSection
 EndGlobal
