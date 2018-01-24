@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Interactions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,8 +20,8 @@ namespace GoogleSearchTest
         [Given(@"I navigate to the page ""(.*)""")]
         public void GivenINavigateToThePage(string p0)
         {
-            driver = new FirefoxDriver();
-            driver.Navigate().GoToUrl("https://www.google.ru/");
+            driver = new ChromeDriver();
+            driver.Navigate().GoToUrl("https://www.google.com/");
         }
 
         [When(@"I see the page is loaded")]
@@ -38,15 +39,16 @@ namespace GoogleSearchTest
 
         [When(@"I click on Search Button")]
         public void WhenIClickOnSearchButton()
-        {
-            driver.FindElement(By.Name("btnG")).Click();
-            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(5);
+        {            
+            driver.FindElement(By.Id("hplogo")).Click();
+            driver.FindElement(By.Name("btnK")).Click();
+            driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
         }
 
         [Then(@"Search items shows the items related to SpecFlow")]
         public void ThenSearchItemsShowsTheItemsRelatedToSpecFlow()
         {
-            Assert.AreEqual("SpecFlow - Cucumber for .NET", driver.FindElement(By.XPath("//h3/a))")).Text);
+            Assert.AreEqual("SpecFlow - Binding Business Requirements to .NET Code", driver.FindElement(By.CssSelector("#rso > div > div > div:nth-child(1) > div > div > h3 > a")).Text);
             driver.Close();
         }
 
